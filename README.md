@@ -11,8 +11,6 @@
 The objective of this project is to realize a working bot for slack. The bot should be able to assist the workspace in which it is installed to execute certain tasks as in this case __web scraping__.
 I used the slack-ruby-bot for the bot library and Nokogiri gem for scrapping. All dependencies will be listed below.
 
-![screenshot](./assets/wikisc.png)
-
 ## Built With
 
 - Ruby
@@ -56,7 +54,10 @@ SLACK_API_TOKEN=xoxb-000000000000-000000000000-AaaaaAAa00aa0AaaA00aAab
 - Your workspace, __DM__ the bot
 - Type ```greet``` to get a ```hello``` from the bot
 - Type ```info``` to get bot commands
-![screenshot](./assets/buysc.png)
+
+
+![screenshot](./assets/othersc.png)
+
 
 - - To establish connection between your workspace bot and the code
 
@@ -69,11 +70,19 @@ SLACK_API_TOKEN=xoxb-000000000000-000000000000-AaaaaAAa00aa0AaaA00aAab
 - - ```wiki football```
 - - ```wiki ruby```
 
+
+![screenshot](./assets/wikisc.png)
+
+
 - To get products from ebay:
 - - Use the keyword ```buy``` then the item eg:
-- - ```ebay shirt```
-- - ```ebay laptop```
-![screenshot](./assets/othersc.png)
+- - ```buy iphone```
+- - ```buy laptop```
+
+
+![screenshot](./assets/buysc.png)
+
+
 
 ## Authors
 
