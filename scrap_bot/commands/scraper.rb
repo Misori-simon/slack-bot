@@ -4,8 +4,6 @@ require 'open-uri'
 
 # class for scraping
 class Scraper
-  attr_reader :option, :item
-
   def initialize
     @url = ''
     @rendered_text = []
