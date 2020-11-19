@@ -11,35 +11,19 @@ class Scraper
     @rendered_text = []
   end
 
-  def ebay_construct
-    default_right_url = '&_sacat=0&rt=nc&LH_Auction=1&_sop='
-    other_right_url = '&_sacat=0&LH_Auction=1&_sop='
-    @option_data = {
-      'option' => option,
-      'base_url_left' => 'https://www.ebay.com/sch/i.html?_from=R40&_nkw=',
-      'base_url_right' => @filter == 'default' ? default_right_url : other_right_url,
-      'item' => item,
-      'filter' => {
-        'default' => '1',
-        'old' => '1',
-        'new' => '10',
-        'cheap' => '15',
-        'pricey' => '16'
-      }
-    }
-  end
-
   def option_construct(option, item)
     case option
     when 'wiki'
-      @option_data = {
-        'option' => option,
-        'base_url' => 'https://en.wikipedia.org/wiki/',
-        'item' => item
-      }
+      @option_data = { 'option' => option, 'base_url' => 'https://en.wikipedia.org/wiki/', 'item' => item }
       @rendered_text = ["Wiki Definition for #{item}"]
     when 'ebay'
-      ebay_construct
+      @option_data = {
+        'option' => option,
+        'url_left' => 'https://www.ebay.com/sch/i.html?_from=R40&_nkw=',
+        'url_right' => @filter == 'default' ? '&_sacat=0&rt=nc&LH_Auction=1&_sop=' : '&_sacat=0&LH_Auction=1&_sop=',
+        'item' => item,
+        'filter' => { 'default' => '1', 'old' => '1', 'new' => '10', 'cheap' => '15', 'pricey' => '16' }
+      }
       @rendered_text = ["Ebay results for #{item}"]
     end
     @option_data
@@ -50,8 +34,8 @@ class Scraper
     when 'wiki'
       @url = "#{@option_data['base_url']}#{@option_data['item']}"
     when 'ebay'
-      @url = "#{@option_data['base_url_left']}#{@option_data['item']}"
-      @url << "#{@option_data['base_url_right']}#{@option_data['filter'][@filter]}"
+      @url = "#{@option_data['url_left']}#{@option_data['item']}"
+      @url << "#{@option_data['url_right']}#{@option_data['filter'][@filter]}"
     end
   end
 

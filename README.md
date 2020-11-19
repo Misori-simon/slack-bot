@@ -11,7 +11,7 @@
 The objective of this project is to realize a working bot for slack. The bot should be able to assist the workspace in which it is installed to execute certain tasks as in this case __web scraping__.
 I used the slack-ruby-bot for the bot library and Nokogiri gem for scrapping. All dependencies will be listed below.
 
-![screenshot](./images/sreenshot.png)
+![screenshot](./assets/wikisc.png)
 
 ## Built With
 
@@ -46,20 +46,22 @@ bundle install
 ```
 - create a new slack workspace https://slack.com/create
 - Create a new bot for your workspace https://api.slack.com/apps/new
-- Copy the __token__ privided you
+- Copy the __token__ provided you
 - In your slack-bot folder on your pc,
 - - Create a ```.env``` file
-- - Add a new evironmental variable as shown below, where value is your __token__
+- - Add a new environmental variable as shown below, where value is your __token__
 ```
 SLACK_API_TOKEN=xoxb-000000000000-000000000000-AaaaaAAa00aa0AaaA00aAab
 ```
 - :warning: the above key is a placeholder, replace the value with your __token__ and save the   ```.env``` file
 - In your CLI while still in the root folder ```slack-bot```
 - Run ```rackup```
-- - To establish connection between your workspace bot and the code
+- - To establish the connection between your workspace bot and the code
 - Your workspace, __DM__ the bot
 - Type ```greet``` to get a ```hello``` from the bot
 - Type ```info``` to get bot commands
+![screenshot](./assets/buysc.png)
+
 - To get a wiki definition of any word:
 - - Use the keyword ```wiki``` then the word eg:
 - - ```wiki football```
@@ -68,6 +70,7 @@ SLACK_API_TOKEN=xoxb-000000000000-000000000000-AaaaaAAa00aa0AaaA00aAab
 - - Use the keyword ```buy``` then the item eg:
 - - ```ebay shirt```
 - - ```ebay laptop```
+![screenshot](./assets/othersc.png)
 
 ## Authors
 
