@@ -19,7 +19,7 @@ I used the slack-ruby-bot for the bot library and Nokogiri gem for scrapping. Al
 - Slack-ruby-bot (lib)
 
 ## Video Presentation
-[Video presentation](https://www.loom.com/share/a1c19cd3e1294487b0fc66de8bd28bfd)
+[Video presentation](https://www.loom.com/share/9da5929918b1485585eafc8328fd707e)
 
 
 ## Getting Started
