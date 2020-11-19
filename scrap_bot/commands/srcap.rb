@@ -1,7 +1,7 @@
 require_relative 'scraper'
-module GeoBot
+module ScrapBot
   module Commands
-    class Geo < SlackRubyBot::Commands::Base
+    class Scrap < SlackRubyBot::Commands::Base
       command 'greet' do |client, data, _match|
         client.say(channel: data.channel, text: 'hello')
       end
