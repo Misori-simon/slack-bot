@@ -18,10 +18,6 @@ I used the slack-ruby-bot for the bot library and Nokogiri gem for scrapping. Al
 - Ruby
 - Slack-ruby-bot (lib)
 
-## Live Demo
-
-[Live Demo Link](https://misori-simon.github.io/online-gadget-shop/)
-
 ## Video Presentation
 [Video presentation](https://www.loom.com/share/a1c19cd3e1294487b0fc66de8bd28bfd)
 
@@ -56,19 +52,17 @@ SLACK_API_TOKEN=xoxb-000000000000-000000000000-AaaaaAAa00aa0AaaA00aAab
 :warning: the above key is a placeholder, replace the value with your __token__ and save the   ```.env``` file
 - In your CLI while still in the root folder ```slack-bot```
 - Run ```rackup```
-<<<<<<< HEAD
 - - To establish the connection between your workspace bot and the code
 - Your workspace, __DM__ the bot
 - Type ```greet``` to get a ```hello``` from the bot
 - Type ```info``` to get bot commands
 ![screenshot](./assets/buysc.png)
-=======
+
 - - To establish connection between your workspace bot and the code
 
 - In Your workspace, __DM__ the bot
 - Type ```greet``` to get a ```hello``` from the bot
 - Type ```info``` to get bot commands
->>>>>>> 632fd4a931c3d045540b99b8d6e4eb8e6cbf9c52
 
 - To get a wiki definition of any word:
 - - Use the keyword ```wiki``` then the word eg:
