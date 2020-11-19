@@ -6,4 +6,3 @@ gem 'httparty'
 gem 'nokogiri'
 gem 'puma'
 gem 'slack-ruby-bot'
-
