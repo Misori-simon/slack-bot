@@ -14,7 +14,8 @@ module ScrapBot
     command :info do
       title 'info'
       desc 'displays complete information about the bot'
-      long_desc 'displays complete information about the bot and related commands on how to use the scrap bot with examples'
+      long_desc 'displays complete information about the bot and '
+      long_desc << 'related commands on how to use the scrap bot with examples'
     end
   end
 end
