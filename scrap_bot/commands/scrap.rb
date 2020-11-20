@@ -11,14 +11,12 @@ module ScrapBot
       end
       match(/^wiki (?<location>.*)$/i) do |client, data, match|
         client.say(channel: data.channel, text: Scraper.new.wiki(match[:location]))
-        # client.say(channel: data.channel, text: "The wiki in #{match[:location]} is nice.")
       end
 
       match(/^buy (?<location>.*)$/i) do |client, data, match|
         item = Scraper.new.ebay(match[:location])
         item = Scraper.new.group_to_string(item)
         client.say(channel: data.channel, text: item)
-        # client.say(channel: data.channel, text: "The wiki in #{match[:location]} is nice.")
       end
     end
   end

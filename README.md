@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Wiki and Ebay Srap_bot for Slack
+# Wiki and Ebay Sraper_bot for Slack
 
 ## Definition
 
@@ -39,7 +39,9 @@ cd slack-bot
 bundle install
 ```
 - create a new slack workspace https://slack.com/create
-- Create a new bot for your workspace https://api.slack.com/apps/new
+- - follow this [tutorial](create_slack_bot.md#1)
+- Create a new bot for your workspace http://slack.com/services/new/bot
+- - follow this [tutorial](create_slack_bot.md#2)
 - Copy the __token__ provided you
 - In your slack-bot folder on your pc,
 - - Create a ```.env``` file
