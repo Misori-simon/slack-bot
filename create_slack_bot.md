@@ -5,33 +5,33 @@
 Table of Content
 - - [Create slack workspace](#1)
 - - [Create slack bot](#2)
-<a name="1"></a>
+<a name="1"></a><br><br>
 ## Create a slack workspace
 
 > Follow the screen shots below to create a slack channel
 
 - visit this link https://slack.com/create
 - Enter your email (check mail for verification)
-![screenshot](./assets/ws-r-01.jpg)
+![screenshot](./assets/ws-r-01.jpg)<br>
 
 - Enter the verifictaion code
-![screenshot](./assets/ws01.jpg)
+![screenshot](./assets/ws01.jpg)<br>
 
-![screenshot](./assets/ws-03.jpg)
+![screenshot](./assets/ws-03.jpg)<br>
 
 - Enter the company name
-![screenshot](./assets/ws-04.jpg)
+![screenshot](./assets/ws-04.jpg)<br>
 
 - Enter your team name
-![screenshot](./assets/ws-05.jpg)
+![screenshot](./assets/ws-05.jpg)<br>
 
-- Add some team members via email invitation
-![screenshot](./assets/ws-06.jpg)
+- Add some team members via email invitation<br>
+![screenshot](./assets/ws-06.jpg)<br>
 
 - Enter your slack workspace
-![screenshot](./assets/ws-07.jpg)
-![screenshot](./assets/ws-08.jpg)
-<a name="2"></a>
+![screenshot](./assets/ws-07.jpg)<br>
+![screenshot](./assets/ws-08.jpg)<br>
+<a name="2"></a><br><br>
 ## Create a new bot for your slack workspace
 
 > Follow the screen shots below to create a new bot for your slack workspace
@@ -39,14 +39,14 @@ Table of Content
 - visit this link http://slack.com/services/new/bot
 
 - Enter the bot username
-![screenshot](./assets/bt-01.jpg)
+![screenshot](./assets/bt-01.jpg)<br>
 
 - Copy bot API token to use in ```.env```
-![screenshot](./assets/bt-02.jpg)
+![screenshot](./assets/bt-02.jpg)<br>
 
 - Add integration
 - Visit your channel
-![screenshot](./assets/bt-02.jpg)
+![screenshot](./assets/bt-02.jpg)<br>
 
 ## Authors
 

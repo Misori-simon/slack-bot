@@ -9,6 +9,8 @@ class Scraper
     @rendered_text = []
   end
 
+  private
+
   def option_construct(option, item)
     case option
     when 'wiki'
@@ -76,6 +78,8 @@ class Scraper
     end
     @rendered_text
   end
+
+  public
 
   def wiki(item)
     option_construct('wiki', item)
