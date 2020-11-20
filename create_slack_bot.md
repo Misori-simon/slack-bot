@@ -11,24 +11,24 @@ Table of Content
 > Follow the screen shots below to create a slack channel
 
 - visit this link https://slack.com/create
-- Enter your email (check mail for verification)
+- Enter your email (check mail for verification)<br>
 ![screenshot](./assets/ws-r-01.jpg)<br>
 
-- Enter the verifictaion code
+- Enter the verifictaion code<br>
 ![screenshot](./assets/ws01.jpg)<br>
 
 ![screenshot](./assets/ws-03.jpg)<br>
 
-- Enter the company name
+- Enter the company name<br>
 ![screenshot](./assets/ws-04.jpg)<br>
 
-- Enter your team name
+- Enter your team name<br>
 ![screenshot](./assets/ws-05.jpg)<br>
 
 - Add some team members via email invitation<br>
 ![screenshot](./assets/ws-06.jpg)<br>
 
-- Enter your slack workspace
+- Enter your slack workspace<br>
 ![screenshot](./assets/ws-07.jpg)<br>
 ![screenshot](./assets/ws-08.jpg)<br>
 <a name="2"></a><br><br>
@@ -38,14 +38,14 @@ Table of Content
 
 - visit this link http://slack.com/services/new/bot
 
-- Enter the bot username
+- Enter the bot username<br>
 ![screenshot](./assets/bt-01.jpg)<br>
 
-- Copy bot API token to use in ```.env```
+- Copy bot API token to use in ```.env```<br>
 ![screenshot](./assets/bt-02.jpg)<br>
 
 - Add integration
-- Visit your channel
+- Visit your channel<br>
 ![screenshot](./assets/bt-02.jpg)<br>
 
 ## Authors
