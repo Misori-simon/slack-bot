@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Wiki and Ebay Sraper_bot for Slack
+# Wiki and Ebay Scraper_bot for Slack
 
 ## Definition
 

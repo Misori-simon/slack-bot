@@ -44,18 +44,6 @@ class Scraper
     Nokogiri::HTML(raw_html)
   end
 
-  def group_to_string(group)
-    text = ''
-    if group.instance_of?(Hash)
-      group.each { |key, value| text << "#{key.capitalize}: #{value}\n" }
-    elsif group.instance_of?(Array)
-      group.each { |val| text << "#{val}\n" }
-    else
-      puts 'can convert only hashes and arrays'
-    end
-    text
-  end
-
   def text_formater
     parsed_html = parse_page
     case @option_data['option']
@@ -80,6 +68,18 @@ class Scraper
   end
 
   public
+
+  def group_to_string(group)
+    text = ''
+    if group.instance_of?(Hash)
+      group.each { |key, value| text << "#{key.capitalize}: #{value}\n" }
+    elsif group.instance_of?(Array)
+      group.each { |val| text << "#{val}\n" }
+    else
+      puts 'can convert only hashes and arrays'
+    end
+    text
+  end
 
   def wiki(item)
     option_construct('wiki', item)
